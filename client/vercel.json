@@ -1,5 +1,20 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/apartments",
+      "destination": "https://apartment-reviews.onrender.com/apartments"
+    },
+    {
+      "source": "/apartments/(.*)",
+      "destination": "https://apartment-reviews.onrender.com/apartments/$1"
+    },
+    {
+      "source": "/auth/(.*)",
+      "destination": "https://apartment-reviews.onrender.com/auth/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
